@@ -14,4 +14,4 @@ Feature: Title of your feature
       | status | city           |
       |    200 | london         |
       |    200 | San Francisco 	|
-      |    500 | Busan 			|
+      |    200 | Busan 			|
