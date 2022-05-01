@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 0,
+      "category": "elctronic",
+      "pname": "iphonx",
+      "company": "apple",
+      "price": "500",
+      "price in": "dollar"
+    },
+    {
+      "id": 1,
+      "category": "elctronic",
+      "pname": "iphon 12",
+      "company": "apple",
+      "price": "1100",
+      "price in": "dollar"
+    },
+    {
+      "category": "book",
+      "pname": "My day",
+      "company": "XB",
+      "price": "120",
+      "price in": "dollar",
+      "id": 2
+    }
+  ]
+}

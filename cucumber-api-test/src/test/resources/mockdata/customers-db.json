@@ -1,0 +1,95 @@
+{
+  "customers": [
+    {
+      "id": 0,
+      "fname": "shy",
+      "lname": "sky",
+      "addresses": [
+        {
+          "address": "321, Silver rd",
+          "city": "Ashland",
+          "state": "NY",
+          "zip": "98654"
+        }
+      ]
+    },
+    {
+      "fname": "bhy",
+      "lname": "ssy",
+      "addresses": [
+        {
+          "address": "322, Sliver rd",
+          "city": "Ashland",
+          "state": "NY",
+          "zip": "98654"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "fname": "dry",
+      "lname": "sry",
+      "addresses": [
+        {
+          "address": "470, Silver rd",
+          "city": "Ashland",
+          "state": "NY",
+          "zip": "98657"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "fname": "shy",
+      "lname": "sky",
+      "addresses": [
+        {
+          "address": "321, Sliver rd",
+          "city": "Ashland",
+          "state": "NY",
+          "zip": "98654"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "fname": "shy",
+      "lname": "sky",
+      "addresses": [
+        {
+          "address": "321, Sliver rd",
+          "city": "Ashland",
+          "state": "NY",
+          "zip": "98654"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "fname": "shy",
+      "lname": "sky",
+      "addresses": [
+        {
+          "address": "321, Sliver rd",
+          "city": "Ashland",
+          "state": "NY",
+          "zip": "98654"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "fname": "shy",
+      "lname": "sky",
+      "addresses": [
+        {
+          "address": "321, Sliver rd",
+          "city": "Ashland",
+          "state": "NY",
+          "zip": "98654"
+        }
+      ],
+      "id": 6
+    }
+  ]
+}

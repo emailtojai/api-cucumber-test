@@ -1,0 +1,12 @@
+{
+  "fname": "shy",
+  "lname": "sky",
+  "addresses": [
+    {
+      "address": "321, Sliver rd",
+      "city": "Ashland",
+      "state": "NY",
+      "zip": "98654"
+    }
+  ]
+}

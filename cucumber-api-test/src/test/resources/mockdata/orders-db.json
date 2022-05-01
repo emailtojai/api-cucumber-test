@@ -1,0 +1,72 @@
+{
+  "orders": [
+    {
+      "id": 0,
+      "date": "04/02/2022",
+      "trackingno": "TP087463563",
+      "totalprice": "600",
+      "price in": "dollar",
+      "productid": "0",
+      "custid": "0",
+      "product": [
+        {
+          "productid": "0",
+          "category": "elctronic",
+          "pname": "iphonx",
+          "company": "apple",
+          "price": "600",
+          "price in": "dollar"
+        }
+      ],
+      "customer": [
+        {
+          "custid": "0",
+          "fname": "shy",
+          "lname": "sky",
+          "addresses": [
+            {
+              "address": "321, Sliver rd",
+              "city": "Ashland",
+              "state": "NY",
+              "zip": "98654"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "04/03/2022",
+      "trackingno": "TP087463564",
+      "totalprice": "1000",
+      "price in": "dollar",
+      "productid": "1",
+      "custid": "0",
+      "product": [
+        {
+          "productid": "1",
+          "category": "elctronic",
+          "pname": "iphonx",
+          "company": "apple",
+          "price": "1000",
+          "price in": "dollar"
+        }
+      ],
+      "customer": [
+        {
+          "custid": "0",
+          "fname": "shy",
+          "lname": "sky",
+          "addresses": [
+            {
+              "address": "321, Sliver rd",
+              "city": "Ashland",
+              "state": "NY",
+              "zip": "98654"
+            }
+          ]
+        }
+      ],
+      "id": 1
+    }
+  ]
+}
