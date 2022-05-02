@@ -1,7 +1,6 @@
 
 
-Feature: Title of your feature
-  Test customer feature scenarios
+Feature: Test customer feature scenarios
 
   As a user , I want validate customer api scenarios ex: create, update, +
   search and delete with different set of scenarios
@@ -10,7 +9,7 @@ Feature: Title of your feature
     Given Setup below base api url:
       |http://localhost:8081/api/v1|
 
-  Scenario Outline: Create customer record and validate the data
+  Scenario Outline: <scenario>
     When I submit scenario <scenario> with payload <payload> to api endpoint <endpoint>
     Then I should get response status code as <status>
     And  I should get response with new customer id
