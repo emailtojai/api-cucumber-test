@@ -1,0 +1,46 @@
+# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
+# For more informatjion see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
+
+name: Cucumber Workflow Jai test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up JDK 11
+      uses: actions/setup-java@v3
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        cache: maven
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: install json-server globally
+      run: npm i -g json-server && json-server --version
+    - name: Start api server for customer
+      run: nohup json-server -p 8081 --routes ./cucumber-api-test/src/test/resources/mockdata/routes.json ./cucumber-api-test/src/test/resources/mockdata/customers-db.json &
+    - name: Start api server for product
+      run: nohup json-server -p 8082 --routes ./cucumber-api-test/src/test/resources/mockdata/routes.json ./cucumber-api-test/src/test/resources/mockdata/products-db.json &
+    - name: Start api server for orders
+      run: nohup json-server -p 8083 --routes ./cucumber-api-test/src/test/resources/mockdata/routes.json ./cucumber-api-test/src/test/resources/mockdata/orders-db.json &
+    
+    - name: Build with Maven
+      run: mvn -B package --file ./cucumber-api-test/pom.xml
+       
+    - name: Deploy 
+      uses: JamesIves/github-pages-deploy-action@v4.3.0
+      with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder:  ./cucumber-api-test/target/reports   
+     
