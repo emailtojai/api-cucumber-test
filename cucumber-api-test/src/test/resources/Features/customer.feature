@@ -8,7 +8,7 @@ Feature: Title of your feature
 
   Background:
     Given Setup below base api url:
-      |http://localhost:8081|
+      |http://localhost:8081/api/v1|
 
   Scenario Outline: Create customer record and validate the data
     When I submit scenario <scenario> with payload <payload> to api endpoint <endpoint>
