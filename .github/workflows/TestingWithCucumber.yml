@@ -37,6 +37,8 @@ jobs:
     
     - name: Build with Maven
       run: mvn -B package --file ./cucumber-api-test/pom.xml
+       
+    - name: Deploy 
       uses: JamesIves/github-pages-deploy-action@v4.3.0
       with:
           branch: gh-pages # The branch the action should deploy to.
