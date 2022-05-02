@@ -1,5 +1,4 @@
 package StepDefinations;
-
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -27,7 +26,6 @@ public class CreateCustomer {
     @When("^I submit scenario (.*) with payload (.*) to api endpoint (.*)$")
     public void iSubmitRequestToCreateCustomerWithPayload(String scenario, String payload, String endpoint) {
        response = request.body(payload).post(endpoint).then().extract().response();
-
     }
 
     @Then("^I should get response status code as (.*)$")
@@ -38,16 +36,15 @@ public class CreateCustomer {
 
     @And("^I should get response with new customer id$")
     public void iShouldGetReponseWithNewCustomerId() {
-        //Assert.assertEquals(status, response.getStatusCode());
-        System.out.println("test");
+        int id = response.getBody().path("id");
+        Assert.assertNotNull(id);
     }
 
     @And("^I should get response with value first name as (.*) and last name as (.*)$")
     public void iShouldGetresponseWithValueFirstNameandLastName(String fname, String lname) {
-        //Assert.assertEquals(status, response.getStatusCode());
-        System.out.println("test");
+        String firstname = response.getBody().path("fname");
+        String lastname = response.getBody().path("lname");
+        Assert.assertEquals(fname, firstname);
+        Assert.assertEquals(lname, lastname);
     }
-
-
-
 }
