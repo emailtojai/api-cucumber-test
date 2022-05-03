@@ -95,6 +95,54 @@
       "price": "200",
       "price in": "dollar",
       "id": 11
+    },
+    {
+      "category": "elctronic",
+      "pname": "iphon 12",
+      "company": "apple",
+      "price": "1000",
+      "price in": "dollar",
+      "id": 12
+    },
+    {
+      "category": "elctronic",
+      "pname": "iphonX",
+      "company": "apple",
+      "price": "500",
+      "price in": "dollar",
+      "id": 13
+    },
+    {
+      "category": "elctronic",
+      "pname": "$%^$#@#$",
+      "company": "XSD",
+      "price": "200",
+      "price in": "dollar",
+      "id": 14
+    },
+    {
+      "category": "elctronic",
+      "pname": "iphon 12",
+      "company": "apple",
+      "price": "1000",
+      "price in": "dollar",
+      "id": 15
+    },
+    {
+      "category": "elctronic",
+      "pname": "iphonX",
+      "company": "apple",
+      "price": "500",
+      "price in": "dollar",
+      "id": 16
+    },
+    {
+      "category": "elctronic",
+      "pname": "$%^$#@#$",
+      "company": "XSD",
+      "price": "200",
+      "price in": "dollar",
+      "id": 17
     }
   ]
 }
