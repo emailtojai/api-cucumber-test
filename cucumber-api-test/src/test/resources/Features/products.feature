@@ -1,10 +1,10 @@
-Feature: Test products features
+Feature: Test product API features
 
-  As a user , I want validate products api scenarios ex: create, update, +
+  As a user , I want to validate Product API Scenarios ex: create, update, +
   search and delete with different set of scenarios
 
   Background:
-    Given Setup below product base api url:
+    Given Setup Product API URL:
       |http://localhost:8082/api/v1|
 
   Scenario Outline: <scenario>

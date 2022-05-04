@@ -16,7 +16,7 @@ public class CreateProducts {
     RequestSpecification request;
     Response response;
 
-    @Given("^Setup below product base api url:$")
+    @Given("^Setup Product API URL:$")
     public void setupBaseUrlforProduct(String baseurl) {
         RestAssured.baseURI = baseurl;
         request = RestAssured.given().header("Content-Type", "application/json");

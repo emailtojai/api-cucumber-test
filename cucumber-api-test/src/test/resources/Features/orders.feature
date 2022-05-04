@@ -1,5 +1,4 @@
-Feature: Title of your feature
-  Test orders functionalities
+Feature:  Test orders functionalities
 
   As a user , I want to validate orders api scenarios ex: create, update ,
   search and delete with different set of scenarios
