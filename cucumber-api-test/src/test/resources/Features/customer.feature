@@ -15,8 +15,8 @@ Feature: Test Customer API Feature Scenarios
 
     Examples:
       | scenario                                    |  payload                                                                                                                              | endpoint        | status      | expectedfirstname           | expectedlastname   |
-      | Create new customer with alpha numeric      |  {"fname": "John123", "lname": "Adam123","addresses": [{"address": "321, Sliver rd","city": "Ashland","state": "NY","zip": "98654"}]} | /customers      | 500         | John123          | Adam123     |
-      | Create new customer with numeric            |  {"fname": "2345123", "lname": "542342","addresses": [{"address": "321, Sliver rd","city": "Ashland","state": "NY","zip": "98654"}]}  | /customers      | 301         | 2345123         | 542342  |
+      | Create new customer with alpha numeric      |  {"fname": "John123", "lname": "Adam123","addresses": [{"address": "321, Sliver rd","city": "Ashland","state": "NY","zip": "98654"}]} | /customers      | 301         | John123          | Adam123     |
+      | Create new customer with numeric            |  {"fname": "2345123", "lname": "542342","addresses": [{"address": "321, Sliver rd","city": "Ashland","state": "NY","zip": "98654"}]}  | /customers      | 201         | 2345123         | 542342  |
       | Create new customer with nullfirstname      |  {"fname": "2345123", "lname": "542342","addresses": [{"address": "321, Sliver rd","city": "Ashland","state": "NY","zip": "98654"}]}  | /customers      | 201         | 2345123         | 542342  |
       | Create new customer with nulllastname       |  {"fname": "2345123", "lname": "542342","addresses": [{"address": "321, Sliver rd","city": "Ashland","state": "NY","zip": "98654"}]}  | /customers      | 201         | 2345123         | 542342  |
       | Create new customer with nullfirstlastname  |  {"fname": "2345123", "lname": "542342","addresses": [{"address": "321, Sliver rd","city": "Ashland","state": "NY","zip": "98654"}]}  | /customers      | 201         | 2345123         | 542342  |
