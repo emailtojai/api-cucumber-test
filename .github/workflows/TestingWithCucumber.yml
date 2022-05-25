@@ -29,11 +29,11 @@ jobs:
     - name: install json-server globally
       run: npm i -g json-server && json-server --version
     - name: Start api server for customer
-      run: nohup json-server -p 8081 --routes ./cucumber-api-test/src/test/resources/mockdata/routes.json ./cucumber-api-test/src/test/resources/mockdata/customers-db.json &
+      run: nohup json-server -p 8081 --routes ./cucumber-api-test/src/test/resources/mockdata/routes.json ./cucumber-api-test/src/test/resources/mockdata/customers-db.json --middlewares ./src/test/resources/middleware/validator.js &
     - name: Start api server for product
-      run: nohup json-server -p 8082 --routes ./cucumber-api-test/src/test/resources/mockdata/routes.json ./cucumber-api-test/src/test/resources/mockdata/products-db.json &
+      run: nohup json-server -p 8082 --routes ./cucumber-api-test/src/test/resources/mockdata/routes.json ./cucumber-api-test/src/test/resources/mockdata/products-db.json --middlewares ./src/test/resources/middleware/validator.js &
     - name: Start api server for orders
-      run: nohup json-server -p 8083 --routes ./cucumber-api-test/src/test/resources/mockdata/routes.json ./cucumber-api-test/src/test/resources/mockdata/orders-db.json &
+      run: nohup json-server -p 8083 --routes ./cucumber-api-test/src/test/resources/mockdata/routes.json ./cucumber-api-test/src/test/resources/mockdata/orders-db.json --middlewares ./src/test/resources/middleware/validator.js &
     
     - name: Build with Maven
       run: mvn -B package --file ./cucumber-api-test/pom.xml || true
