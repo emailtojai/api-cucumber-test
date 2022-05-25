@@ -1,0 +1,33 @@
+{
+  "date": "25/02/2022",
+  "trackingno": "TP087463563",
+  "price": "600",
+  "price in": "dollar",
+  "productid": "0",
+  "custid": "0",
+  "product": [
+    {
+      "productid": "0",
+      "category": "electronic",
+      "pname": "iphonx",
+      "company": "apple",
+      "price": "600",
+      "price in": "dollar"
+    }
+  ],
+  "customer": [
+    {
+      "custid": "0",
+      "fname": "shy",
+      "lname": "sky",
+      "addresses": [
+        {
+          "address": "321, Sliver rd",
+          "city": "Ashland",
+          "state": "NY",
+          "zip": "98654"
+        }
+      ]
+    }
+  ]
+}
